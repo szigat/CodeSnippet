@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>sqlconn</Title>
+      <Shortcut>sqlconn</Shortcut>
+      <Description>Create property with DataMember attribute</Description>
+      <Author>Attila Szigeti</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>System.Data.SqlClient</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>connectionString</ID>
+          <ToolTip>Connection string</ToolTip>
+          <Default>ConnectionString</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[using (SqlConnection connection = new SqlConnection($connectionString$))
+        {
+          $end$
+        }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

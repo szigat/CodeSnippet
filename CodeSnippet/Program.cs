@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
@@ -14,6 +15,11 @@ namespace CodeSnippet
 
         static void Main(string[] args)
         {
+            using (SqlConnection connection = new SqlConnection(""))
+            {
+                //
+            }
+            
         }
     }
 }

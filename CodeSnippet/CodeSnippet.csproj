@@ -48,6 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="sqlconn.snippet">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="dmprop.snippet">
       <SubType>Designer</SubType>
     </None>
